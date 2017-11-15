@@ -17,5 +17,10 @@ namespace UserMicroService.Models
         public string CountryName { get; set; }
         public string Phone { get; set; }
         public bool Active { get; set; }
+
+        public override string ToString()
+        {
+            return "Id: " + Id.ToString() + "Name: " + Name;
+        }
     }
 }
